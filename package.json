@@ -1,0 +1,27 @@
+{
+  "name": "gitfusion.gateway",
+  "version": "1.0.0",
+  "description": "Graphql gateway for gitfusion microservices",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "compile:build": "tsc --project tsconfig.build.json",
+    "start": "npm run compile && node ./dist/index.js",
+    "serve": "nodemon"
+  },
+  "author": "Kartik Dhawan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^2.11.2",
+    "@apollo/server": "^4.12.2",
+    "graphql": "^16.11.0",
+    "winston": "^3.17.0"
+  }
+}
